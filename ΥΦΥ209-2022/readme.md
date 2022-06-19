@@ -15,7 +15,7 @@ Each folder inside this directory contains a number of files.
     1. __Project_Code.py__ is the python programme created to reproduce the figures regarding the normalized modal fraction, the configurational entropy and the stellar mass. The python programme contains comments helping the reader understand the commands and the thought process of the student.
 2. __Figures__, which includes the printed figures from the execution of the python code
     1. __Figure1.png__ is the replicated FIG 1. regarding the normalized modal fraction for sample values of the polytropic index γ.
-    2. __Figure2.png__ is the replicated FIG 2. regarding the Configurational entropy times $ρ_0^{-1}$ (continuous line) and mass (dotted line) versus polytropic index γ for $ρ_0=ρ_c$.
+    2. __Figure2.png__ is the replicated FIG 2. regarding the Configurational entropy times $ρ^{-1}_0$ (continuous line) and mass (dotted line) versus polytropic index γ for $ρ_0=ρ_c$.
     3. __Figure3.png__ is the replicated FIG 3. regarding the Configurational entropy versus polytropic index γ for polytropes. We display results for several choices of cutoff for $k_{min}$.
     4. __Lane_Emden.png__ is the graph of the Numerical solutions of the Lane-Emden equation for different polytropic index γ.
 3. __Presentation__, which includes the presentation prepared for the project

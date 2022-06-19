@@ -1,4 +1,4 @@
-# $\Upsilon$$\Phi$$\Upsilon$201-2022 Project
+# ΥΦΥ201-2022 Project
 
 ## Directory Structure
 In this directory readers can find the following folders:

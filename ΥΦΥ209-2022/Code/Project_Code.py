@@ -44,8 +44,8 @@ warnings.filterwarnings("ignore")
 gamma = np.linspace(1.2, 1.9, 169)        # gamma values
 k_min_coef = np.array([0.95, 1.00, 1.05]) # coefficients of k_min for fig 3.
 coef_calc = 1                             # coefficient for which figures 1 and 2 are drawn
-t_init = 10e-4                            # inital value of xi for solving the differentail equation
-t_end = 30                                # inital value of xi for solving the differentail equation
+t_init = 10e-4                            # inital value of xi for solving the differential equation
+t_end = 30                                # final value of xi for solving the differential equation
 M_coef = 200                              # Mass coefficient to scale fig 2.
 d = 10000                                 # number of values returned from solve_ivp and simpson
 pg = np.linspace(1.2, 1.9, 8)             # values that will be plotted in figure of lane emden solutions
@@ -149,9 +149,6 @@ for ind,g in enumerate(gamma):
     # using simpson function the h_min is computed for the value k_min
     y_min = (x_n**(1/(g-1)))*np.sin(np.multiply.outer(min_k,ti))*ti
     h_min = (inte.simpson(y_min,ti,dx=0.001,axis=1)*(1/min_k))**2
-    
-    # h array stores the values of h(kappa)
-    h = np.zeros(d)
     
     # For all values of kappa the h(ak) is computed
     y_data = (x_n**(1/(g-1)))*np.sin(np.multiply.outer(k,ti))*ti
